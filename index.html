@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Amul Kool - The Ultimate Chill</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#006b24",
+                        "secondary": "#4f54b4",
+                        "background": "#f8faf1",
+                        "surface": "#f8faf1",
+                        "on-background": "#191d17",
+                        "on-surface": "#191d17",
+                        "on-surface-variant": "#3e4a3c",
+                        "outline-variant": "#bdcab9",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e7e9e0",
+                        "surface-bright": "#f8faf1",
+                    },
+                    fontFamily: {
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                    }
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Transparent Navbar -->
+    <nav id="site-nav">
+        <a href="#hero" class="nav-logo">Amul <span>Kool</span></a>
+        <ul class="nav-links">
+            <li><a href="#section-experience">Experience</a></li>
+            <li><a href="#section-benefits">Benefits</a></li>
+            <li><a href="#section-lifestyle">Lifestyle</a></li>
+            <li><a href="#section-store">Find Us</a></li>
+        </ul>
+        <a href="#section-store" class="nav-cta">Buy Now</a>
+    </nav>
+    <div id="loader">
+        <div class="loader-content">
+            <h1>Chilling the Kool...</h1>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <p id="progress-text">0%</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="canvas-container">
+                <canvas id="scroll-canvas"></canvas>
+            </div>
+            <div class="content-overlay">
+                <div id="hero-brand">
+                    <h1 id="hero-headline">Amul Kool</h1>
+                    <p id="hero-subheadline">The Taste of India</p>
+                    <div id="scroll-hint">
+                        <span class="scroll-arrow"></span>
+                        <span>Scroll to explore</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New sections from code.html -->
+        <section id="section-experience" class="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#08140c] relative overflow-hidden">
+            <!-- Background glows -->
+            <div class="absolute top-1/4 left-0 w-96 h-96 bg-[radial-gradient(circle,rgba(0,255,204,0.04)_0%,transparent_70%)] pointer-events-none z-0"></div>
+            <div class="absolute bottom-1/4 right-0 w-96 h-96 bg-[radial-gradient(circle,rgba(59,130,246,0.04)_0%,transparent_70%)] pointer-events-none z-0"></div>
+
+            <div class="container mx-auto px-6 text-center mb-12 relative z-10">
+                <h2 class="text-4xl font-bold text-white mb-4">The Royal Elaichi Experience</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Discover why our Royal Elaichi is the gold standard for flavored milk across the nation.
+                </p>
+            </div>
+            <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="experience-card bg-white/[0.02] backdrop-blur-md p-8 rounded-2xl border border-white/[0.07] hover:border-[#00ffcc]/40 hover:bg-white/[0.05] transition-all duration-500 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(0,255,204,0.15)] relative z-10">
+                        <div class="w-12 h-12 bg-[#00ffcc]/10 rounded-full flex items-center justify-center mb-4 text-[#00ffcc] font-bold shadow-[0_0_15px_rgba(0,255,204,0.2)] border border-[#00ffcc]/20">
+                            <span class="material-symbols-outlined">eco</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Aromatic</h3>
+                        <p class="text-sm text-gray-400">Pure green cardamom seeds harvested at peak ripeness.</p>
+                    </div>
+                    <div class="experience-card bg-white/[0.02] backdrop-blur-md p-8 rounded-2xl border border-white/[0.07] hover:border-blue-400/40 hover:bg-white/[0.05] transition-all duration-500 mt-8 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(59,130,246,0.15)] relative z-10">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mb-4 text-blue-400 font-bold shadow-[0_0_15px_rgba(59,130,246,0.2)] border border-blue-500/20">
+                            <span class="material-symbols-outlined">water_drop</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Creamy</h3>
+                        <p class="text-sm text-gray-400">Rich, full-bodied milk texture that coats the palate perfectly.</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="experience-card flex gap-6 items-start p-6 bg-white/[0.02] backdrop-blur-md rounded-2xl border border-white/[0.07] hover:border-blue-400/40 hover:bg-white/[0.05] transition-all duration-500 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(59,130,246,0.12)] relative z-10">
+                        <div class="p-4 bg-blue-500/10 rounded-lg text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.15)] border border-blue-500/20">
+                            <span class="material-symbols-outlined">workspace_premium</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Legacy of Quality</h4>
+                            <p class="text-gray-400">Amul's trusted dairy heritage ensures every bottle meets the highest standards of purity.</p>
+                        </div>
+                    </div>
+                    <div class="experience-card flex gap-6 items-start p-6 bg-white/[0.02] backdrop-blur-md rounded-2xl border border-white/[0.07] hover:border-[#00ffcc]/40 hover:bg-white/[0.05] transition-all duration-500 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(0,255,204,0.12)] relative z-10">
+                        <div class="p-4 bg-[#00ffcc]/10 rounded-lg text-[#00ffcc] shadow-[0_0_15px_rgba(0,255,204,0.15)] border border-[#00ffcc]/20">
+                            <span class="material-symbols-outlined">science</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Cold-Chain Perfected</h4>
+                            <p class="text-gray-400">UHT treatment preserves freshness without any added preservatives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-benefits" class="py-20 bg-gradient-to-b from-[#08140c] to-[#0a0a0a] relative overflow-hidden">
+            <!-- Background glow -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(168,85,247,0.03)_0%,transparent_70%)] pointer-events-none z-0"></div>
+
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+                <div class="benefit-card flex flex-col items-center text-center bg-white/[0.02] backdrop-blur-md p-8 rounded-2xl border border-white/[0.07] hover:border-blue-400/40 hover:bg-white/[0.05] transition-all duration-500 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(59,130,246,0.15)] relative z-10">
+                    <div class="w-20 h-20 bg-blue-500/10 rounded-full flex items-center justify-center mb-6 text-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.2)] border border-blue-500/20">
+                        <span class="material-symbols-outlined text-3xl">bolt</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Energy Boost</h3>
+                    <p class="text-gray-400">Instantly revitalizing with the natural goodness of milk proteins and minerals.</p>
+                </div>
+                <div class="benefit-card flex flex-col items-center text-center bg-white/[0.02] backdrop-blur-md p-8 rounded-2xl border border-white/[0.07] hover:border-[#00ffcc]/40 hover:bg-white/[0.05] transition-all duration-500 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(0,255,204,0.15)] relative z-10">
+                    <div class="w-20 h-20 bg-[#00ffcc]/10 rounded-full flex items-center justify-center mb-6 text-[#00ffcc] shadow-[0_0_20px_rgba(0,255,204,0.2)] border border-[#00ffcc]/20">
+                        <span class="material-symbols-outlined text-3xl">spa</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Natural Ingredients</h3>
+                    <p class="text-gray-400">No artificial colors. Only natural cardamom flavors for an authentic taste.</p>
+                </div>
+                <div class="benefit-card flex flex-col items-center text-center bg-white/[0.02] backdrop-blur-md p-8 rounded-2xl border border-white/[0.07] hover:border-purple-400/40 hover:bg-white/[0.05] transition-all duration-500 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(168,85,247,0.15)] relative z-10">
+                    <div class="w-20 h-20 bg-purple-500/10 rounded-full flex items-center justify-center mb-6 text-purple-400 shadow-[0_0_20px_rgba(168,85,247,0.2)] border border-purple-500/20">
+                        <span class="material-symbols-outlined text-3xl">diamond</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Royal Flavor</h3>
+                    <p class="text-gray-400">A sophisticated flavor profile designed for the modern royal in you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Lifestyle Section ── -->
+        <section id="section-lifestyle" class="relative overflow-hidden py-16 bg-[#0a0a0a]" style="height: 650px; background: linear-gradient(135deg, #0a0a0a 0%, #08140c 50%, #0a0a0a 100%);">
+            <!-- Background glows -->
+            <div class="absolute top-1/2 left-3/4 -translate-y-1/2 w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(0,255,204,0.08)_0%,transparent_70%)] pointer-events-none z-0"></div>
+            <div class="absolute -top-[100px] -left-[100px] w-[350px] h-[350px] bg-[radial-gradient(circle,rgba(79,84,180,0.06)_0%,transparent_70%)] pointer-events-none z-0"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 max-w-[1280px] mx-auto px-16 h-full flex items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+                    <!-- Left Content Column -->
+                    <div class="lg:col-span-7 flex flex-col justify-center">
+                        <!-- Badge -->
+                        <div class="inline-flex items-center gap-2 bg-[#00ffcc]/10 border border-[#00ffcc]/25 px-4 py-1.5 rounded-full mb-6 w-fit">
+                            <span class="w-2 h-2 rounded-full bg-[#00ffcc] inline-block shadow-[0_0_8px_#00ffcc]"></span>
+                            <span class="font-sans text-[0.75rem] font-semibold tracking-widest uppercase text-[#00ffcc]">Experience the Chill</span>
+                        </div>
+
+                        <!-- Headline -->
+                        <h2 class="font-sans text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight text-white mb-6">
+                            Cool Down<br><span class="text-[#00ffcc] drop-shadow-[0_0_15px_rgba(0,255,204,0.2)]">Like Royalty</span>
+                        </h2>
+
+                        <!-- Body -->
+                        <p class="font-sans text-lg leading-relaxed text-gray-300 mb-8 max-w-[550px]">
+                            Whether you're seeking a moment of mid-day zen or post-workout recovery, Amul Kool Royal Elaichi delivers an exquisitely smooth, lingering cooling sensation that lasts.
+                        </p>
+
+                        <!-- Stat Badges Row -->
+                        <div class="flex gap-4 flex-wrap mb-8">
+                            <div class="bg-white/[0.04] backdrop-blur border border-white/[0.08] rounded-2xl px-6 py-4 text-center min-w-[130px] shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+                                <div class="font-sans text-2xl font-extrabold text-[#00ffcc]">4°C</div>
+                                <div class="font-sans text-[0.7rem] font-medium text-gray-400 uppercase tracking-widest mt-1">Ideal Serve</div>
+                            </div>
+                            <div class="bg-white/[0.04] backdrop-blur border border-white/[0.08] rounded-2xl px-6 py-4 text-center min-w-[130px] shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+                                <div class="font-sans text-2xl font-extrabold text-[#00ffcc]">0%</div>
+                                <div class="font-sans text-[0.7rem] font-medium text-gray-400 uppercase tracking-widest mt-1">Artificials</div>
+                            </div>
+                            <div class="bg-white/[0.04] backdrop-blur border border-white/[0.08] rounded-2xl px-6 py-4 text-center min-w-[130px] shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+                                <div class="font-sans text-2xl font-extrabold text-[#00ffcc]">200ml</div>
+                                <div class="font-sans text-[0.7rem] font-medium text-gray-400 uppercase tracking-widest mt-1">Per Bottle</div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <a href="#section-store" class="inline-flex items-center gap-2.5 bg-[#00ffcc] hover:bg-white text-[#0a0a0a] font-sans text-[0.9rem] font-bold px-8 py-3.5 rounded-full tracking-wider transition-all duration-300 w-fit shadow-[0_4px_15px_rgba(0,255,204,0.2)] hover:shadow-[0_4px_25px_rgba(255,255,255,0.3)] hover:-translate-y-0.5">
+                            <span class="material-symbols-outlined text-[18px]">near_me</span>
+                            Find Near You
+                        </a>
+                    </div>
+
+                    <!-- Right Image Showcase Column -->
+                    <div class="lg:col-span-5 flex justify-center items-center relative h-[450px]">
+                        <!-- Breathing Glow Behind Image -->
+                        <div class="absolute w-[300px] h-[300px] bg-[radial-gradient(circle,rgba(0,255,204,0.18)_0%,transparent_70%)] rounded-full animate-glow z-0"></div>
+                        
+                        <!-- Floating Card Wrapper -->
+                        <div class="relative z-10 animate-float">
+                            <!-- Circular Frame with Image -->
+                            <div class="relative w-[340px] h-[340px] rounded-full p-2 bg-gradient-to-tr from-[#00ffcc]/30 to-white/10 backdrop-blur-md border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden group">
+                                <img src="/royal_elaichi_milk.png" alt="Chilled Royal Elaichi Milk" class="w-full h-full object-cover rounded-full transition-transform duration-700 group-hover:scale-110">
+                                
+                                <!-- Soft Vignette Overlay -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Particles (Cardamoms/Leaves/Drops) -->
+                        <!-- Leaf 1 (Top Left) -->
+                        <div class="absolute top-12 left-6 z-20 animate-particle text-[#00ffcc]/60 select-none pointer-events-none" style="animation-delay: 0s; animation-duration: 7s;">
+                            <span class="material-symbols-outlined text-3xl">spa</span>
+                        </div>
+                        <!-- Water drop 1 (Bottom Right) -->
+                        <div class="absolute bottom-16 right-4 z-20 animate-particle text-blue-400/50 select-none pointer-events-none" style="animation-delay: 1.5s; animation-duration: 9s;">
+                            <span class="material-symbols-outlined text-2xl">water_drop</span>
+                        </div>
+                        <!-- Leaf 2 (Bottom Left) -->
+                        <div class="absolute bottom-12 left-10 z-20 animate-particle text-[#00ffcc]/40 select-none pointer-events-none" style="animation-delay: 3s; animation-duration: 8s;">
+                            <span class="material-symbols-outlined text-xl">eco</span>
+                        </div>
+                        <!-- Star Glow 1 (Top Right) -->
+                        <div class="absolute top-16 right-12 z-20 animate-particle text-yellow-300/60 select-none pointer-events-none" style="animation-delay: 0.8s; animation-duration: 6s;">
+                            <span class="material-symbols-outlined text-2xl">workspace_premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Find Us / CTA Section ── -->
+        <section id="section-store" style="background:linear-gradient(135deg,#0a0a0a 0%,#0d1a0d 50%,#0a0a18 100%);padding:100px 64px;position:relative;overflow:hidden;">
+            <div style="position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:700px;height:300px;background:radial-gradient(ellipse, rgba(0,255,204,0.08) 0%, transparent 70%);pointer-events:none;"></div>
+            <div style="position:absolute;bottom:-60px;right:5%;width:400px;height:300px;background:radial-gradient(ellipse, rgba(79,84,180,0.12) 0%, transparent 70%);pointer-events:none;"></div>
+
+            <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+                <div>
+                    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(0,255,204,0.08);border:1px solid rgba(0,255,204,0.2);padding:6px 16px;border-radius:999px;margin-bottom:28px;">
+                        <span class="material-symbols-outlined" style="font-size:14px;color:#00ffcc;">location_on</span>
+                        <span style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#00ffcc;">Available Nationwide</span>
+                    </div>
+                    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:3.25rem;font-weight:800;line-height:1.08;letter-spacing:-0.02em;color:#ffffff;margin-bottom:20px;">Find Amul Kool <span style="color:#00ffcc;">Near You</span></h2>
+                    <p style="font-family:'Be Vietnam Pro',sans-serif;font-size:1.1rem;line-height:1.75;color:rgba(255,255,255,0.6);margin-bottom:40px;">Join millions of fans who stay chilled. Available at all leading retail outlets, supermarkets, and online stores across India.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px;">
+                        <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:8px 18px;border-radius:999px;font-family:'Be Vietnam Pro',sans-serif;font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:6px;">
+                            <span class="material-symbols-outlined" style="font-size:14px;color:#00ffcc;">storefront</span> Supermarkets
+                        </span>
+                        <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:8px 18px;border-radius:999px;font-family:'Be Vietnam Pro',sans-serif;font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:6px;">
+                            <span class="material-symbols-outlined" style="font-size:14px;color:#00ffcc;">local_shipping</span> Home Delivery
+                        </span>
+                        <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:8px 18px;border-radius:999px;font-family:'Be Vietnam Pro',sans-serif;font-size:0.8rem;font-weight:600;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:6px;">
+                            <span class="material-symbols-outlined" style="font-size:14px;color:#00ffcc;">smartphone</span> Quick Commerce
+                        </span>
+                    </div>
+                </div>
+
+                <div style="background:rgba(255,255,255,0.04);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08);border-radius:24px;padding:40px;">
+                    <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:700;color:#ffffff;margin-bottom:8px;">Find a Store</h3>
+                    <p style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.5);margin-bottom:28px;">Enter your city to find the nearest outlet.</p>
+                    <div style="position:relative;margin-bottom:16px;">
+                        <input type="text" placeholder="e.g. Mumbai, Delhi, Bengaluru…"
+                            style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:16px 16px 16px 48px;font-family:'Be Vietnam Pro',sans-serif;font-size:0.95rem;color:#ffffff;outline:none;box-sizing:border-box;"
+                            onfocus="this.style.borderColor='rgba(0,255,204,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
+                        <span class="material-symbols-outlined" style="position:absolute;left:15px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,0.35);font-size:20px;">search</span>
+                    </div>
+                    <button style="width:100%;background:#00ffcc;color:#0a0a0a;font-family:'Be Vietnam Pro',sans-serif;font-size:0.95rem;font-weight:700;padding:16px;border-radius:12px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;letter-spacing:0.04em;" onmouseover="this.style.background='#ffffff'" onmouseout="this.style.background='#00ffcc'">
+                        <span class="material-symbols-outlined" style="font-size:18px;">near_me</span>
+                        Locate Nearest Store
+                    </button>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;">
+                        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:16px;text-align:center;">
+                            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.5rem;font-weight:800;color:#00ffcc;">50K+</div>
+                            <div style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.45);margin-top:2px;">Retail Outlets</div>
+                        </div>
+                        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:16px;text-align:center;">
+                            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.5rem;font-weight:800;color:#00ffcc;">500+</div>
+                            <div style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.45);margin-top:2px;">Cities Covered</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer style="background:#050505;border-top:1px solid rgba(255,255,255,0.06);padding:60px 64px 36px;">
+        <div style="max-width:1280px;margin:0 auto;">
+            <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px;margin-bottom:48px;">
+                <div>
+                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.75rem;font-weight:800;color:#ffffff;margin-bottom:12px;">Amul <span style="color:#00ffcc;">Kool</span></div>
+                    <p style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;line-height:1.7;color:rgba(255,255,255,0.45);max-width:280px;">India's favourite chilled flavoured milk. Crafted with love, served ice cold.</p>
+                    <div style="display:flex;gap:12px;margin-top:24px;">
+                        <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;" onmouseover="this.style.background='rgba(0,255,204,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+                            <span class="material-symbols-outlined" style="font-size:16px;">share</span>
+                        </a>
+                        <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);text-decoration:none;" onmouseover="this.style.background='rgba(0,255,204,0.15)'" onmouseout="this.style.background='rgba(255,255,255,0.06)'">
+                            <span class="material-symbols-outlined" style="font-size:16px;">mail</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:0.85rem;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:20px;">Product</div>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+                        <li><a href="#section-experience" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Experience</a></li>
+                        <li><a href="#section-benefits" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Benefits</a></li>
+                        <li><a href="#section-lifestyle" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Lifestyle</a></li>
+                        <li><a href="#section-store" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Find a Store</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:0.85rem;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:20px;">Company</div>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+                        <li><a href="#" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Nutrition Guide</a></li>
+                        <li><a href="#" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Privacy Policy</a></li>
+                        <li><a href="#" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Terms of Service</a></li>
+                        <li><a href="#" style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.55);text-decoration:none;" onmouseover="this.style.color='#00ffcc'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:28px;display:flex;justify-content:space-between;align-items:center;">
+                <p style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.82rem;color:rgba(255,255,255,0.3);">© 2024 Amul Dairy. All rights reserved. Stay Chilled.</p>
+                <p style="font-family:'Be Vietnam Pro',sans-serif;font-size:0.82rem;color:rgba(255,255,255,0.2);">Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Amul Kool Royal Elaichi | Refreshingly Cool</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f0f2e9",
+                        "on-primary-fixed": "#002106",
+                        "outline": "#6e7b6b",
+                        "primary-fixed-dim": "#66df74",
+                        "inverse-primary": "#66df74",
+                        "tertiary-container": "#84976e",
+                        "on-tertiary-fixed-variant": "#3c4c29",
+                        "tertiary-fixed-dim": "#bacda0",
+                        "on-tertiary-container": "#1f2e0f",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "on-secondary-fixed-variant": "#373a9b",
+                        "on-tertiary-fixed": "#111f03",
+                        "inverse-surface": "#2e312c",
+                        "surface-dim": "#d9dbd2",
+                        "tertiary-fixed": "#d6e9bb",
+                        "secondary-fixed": "#e1e0ff",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#00872f",
+                        "on-secondary-container": "#292b8d",
+                        "surface-container": "#edefe6",
+                        "outline-variant": "#bdcab9",
+                        "primary": "#006b24",
+                        "surface-container-highest": "#e1e3db",
+                        "surface-container-low": "#f2f5ec",
+                        "on-background": "#191d17",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#959aff",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e1e3db",
+                        "surface-container-high": "#e7e9e0",
+                        "on-primary-container": "#f7fff2",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#3e4a3c",
+                        "tertiary": "#53643f",
+                        "primary-fixed": "#83fc8e",
+                        "on-surface": "#191d17",
+                        "error-container": "#ffdad6",
+                        "secondary": "#4f54b4",
+                        "on-secondary-fixed": "#04006d",
+                        "on-primary-fixed-variant": "#00531a",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f8faf1",
+                        "surface": "#f8faf1",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f8faf1",
+                        "surface-tint": "#006e25",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "sm": "12px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 30px 60px -12px rgba(79, 84, 180, 0.04);
+        }
+
+        .liquid-gradient {
+            background: linear-gradient(135deg, #f8faf1 0%, #e1e0ff 100%);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md selection:bg-primary/20 selection:text-primary">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full bg-surface/80 dark:bg-surface/80 backdrop-blur-md z-50 shadow-sm">
+        <div
+            class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-full mx-auto transition-all duration-300 ease-in-out">
+            <div class="font-headline-md text-headline-md font-extrabold text-secondary dark:text-secondary-fixed">
+                Amul Kool
+            </div>
+            <div class="hidden md:flex gap-lg items-center">
+                <a class="font-label-md text-label-md text-primary dark:text-primary-fixed font-bold border-b-2 border-primary"
+                    href="#">Flavors</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Heritage</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Wellness</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Store</a>
+            </div>
+            <button class="bg-white text-black border border-gray-300 px-6 py-2 rounded-lg font-medium">
+                Buy Now
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative min-h-screen pt-xl flex items-center overflow-hidden liquid-gradient">
+        <div
+            class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-xl">
+            <div class="order-2 md:order-1 space-y-md relative z-10">
+                <div
+                    class="inline-flex items-center gap-xs bg-primary/10 text-primary px-sm py-xs rounded-full font-label-sm">
+                    <span class="material-symbols-outlined text-[16px]"
+                        style="font-variation-settings: 'FILL' 1;">stars</span>
+                    THE ROYAL REFRESHMENT
+                </div>
+                <h1 class="font-headline-xl text-headline-xl text-on-background leading-tight">
+                    Royal Taste, <br>
+                    <span class="text-secondary">Refreshingly Cool</span>
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Experience the opulent blend of creamy milk infused with the aromatic essence of hand-picked
+                    cardamom. A royal legacy in every chilled sip.
+                </p>
+                <div class="flex flex-wrap gap-md pt-base">
+                    <button
+                        class="bg-primary text-on-primary px-lg py-4 rounded-lg font-label-md shadow-lg shadow-primary/20 hover:bg-primary-container transition-all">
+                        Experience Now
+                    </button>
+                    <button
+                        class="border-2 border-secondary text-secondary px-lg py-4 rounded-lg font-label-md hover:bg-secondary/5 transition-all">
+                        View All Flavors
+                    </button>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 relative flex justify-center items-center">
+                <div class="absolute w-[120%] h-[120%] bg-primary/5 rounded-full blur-3xl -z-10"></div>
+                <img alt="Amul Kool Royal Elaichi bottle"
+                    class="w-full max-w-[450px] drop-shadow-2xl animate-float transition-all duration-700"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8zcwmY1Vo5WGJlPIbrdvib23mNV4hIL1jDUvZI6-O7shGIUJdIxcxAQ-v-QeCviPCNUuBBt3NPZIL1heeqMZMMoWdSYibLz8j9jErVZrUlR6MOiNxx7_edsWCBWBWLPapC3viDwS7b96i5xXQjzVgKlCaH5aC4Bs8PzVJ-aeo7ViHQGGPHLWm79-AKWDhT1NMqefVooGJJP-237A2eKBsY0l4fZYpjTVihcnLb-yR3RtiUkYWiLpy7-EvomyWgofY2wwT0X_HSxoA"
+                    style="transform: translateY(-7.64733px);">
+            </div>
+        </div>
+        <!-- Background Liquid Shapes -->
+        <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl opacity-50"></div>
+    </header>
+    <!-- Flavor Profile Section -->
+    <section
+        class="py-xl bg-surface-container-lowest relative overflow-hidden transition-all duration-700 opacity-100 translate-y-0">
+        <div class="container mx-auto px-margin-mobile md:px-margin-desktop text-center mb-lg">
+            <h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-on-background mb-base">The Royal
+                Elaichi Experience</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                Discover why our Royal Elaichi is the gold standard for flavored milk across the nation.
+            </p>
+        </div>
+        <div
+            class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+            <div class="grid grid-cols-2 gap-md">
+                <div class="bg-surface-container-high p-lg rounded-xl glass-card hover-lift">
+                    <div
+                        class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-base text-primary">
+                        <span class="material-symbols-outlined">eco</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-xs">Aromatic</h3>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant">Pure green cardamom seeds harvested
+                        at peak ripeness.</p>
+                </div>
+                <div class="bg-surface-container-high p-lg rounded-xl glass-card hover-lift mt-lg">
+                    <div
+                        class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-base text-secondary">
+                        <span class="material-symbols-outlined">water_drop</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md mb-xs">Creamy</h3>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant">Rich, full-bodied milk texture that
+                        coats the palate perfectly.</p>
+                </div>
+            </div>
+            <div class="space-y-md">
+                <div
+                    class="flex gap-md items-start p-md bg-surface-bright rounded-xl shadow-sm border border-outline-variant/30">
+                    <div class="p-base bg-secondary/5 rounded-lg text-secondary">
+                        <span class="material-symbols-outlined">workspace_premium</span>
+                    </div>
+                    <div>
+                        <h4 class="font-label-md text-label-md text-on-background mb-1">Legacy of Quality</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Amul's trusted dairy heritage
+                            ensures every bottle meets the highest standards of purity.</p>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-md items-start p-md bg-surface-bright rounded-xl shadow-sm border border-outline-variant/30">
+                    <div class="p-base bg-primary/5 rounded-lg text-primary">
+                        <span class="material-symbols-outlined">science</span>
+                    </div>
+                    <div>
+                        <h4 class="font-label-md text-label-md text-on-background mb-1">Cold-Chain Perfected</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant">UHT treatment preserves freshness
+                            without any added preservatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits Section -->
+    <section class="py-xl bg-surface transition-all duration-700 opacity-100 translate-y-0">
+        <div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-lg">
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-20 h-20 bg-secondary/5 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-headline-lg text-secondary">bolt</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-sm">Energy Boost</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">Instantly revitalizing with the natural
+                    goodness of milk proteins and minerals.</p>
+            </div>
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-headline-lg text-primary">spa</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-sm">Natural Ingredients</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">No artificial colors. Only natural cardamom
+                    flavors for an authentic taste.</p>
+            </div>
+            <div class="flex flex-col items-center text-center group">
+                <div
+                    class="w-20 h-20 bg-tertiary-container/10 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-headline-lg text-tertiary">diamond</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-sm">Royal Flavor</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">A sophisticated flavor profile designed for
+                    the modern royal in you.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Lifestyle Section -->
+    <section class="relative py-xl overflow-hidden transition-all duration-700 opacity-100 translate-y-0">
+        <div class="absolute inset-0 z-0">
+            <img alt="Chilled Royal Milk" class="w-full h-full object-cover brightness-50"
+                data-alt="A high-quality lifestyle photograph showing a tall crystal glass filled with chilled, frothy pistachio-green flavored milk. The glass is sweating with condensation and filled with large ice cubes, set against a blurred background of a modern, sun-drenched cafe. The lighting is soft and golden, highlighting the creamy texture and refreshing nature of the drink, evoking a sense of cooling luxury."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu4ofK2Taic5ACLQswv6cLFVIL5vwtQ5dyfGUkQj4n7g1L5AMCKWcuorFn5GkQy5zDWGlIMN8kpSWakgcYoy2EFkxvRQXLhzpEb2nYkBe78T3eQJr7UC5bHHtYcVFaMrdpZUT-awp70KsRm6fC18QUR7I5pDnTOTaRYS7Aqbjsf-LcMZnRoS8HU7Jizt4MBiWxGHfrLXfV6KIo4m5r6p55nzV_1bfcvrrVxSTDtyWJPXdmGtGT3MbPtrs0-9_S68vIeK-KA_IgmD0I">
+            <div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+        </div>
+        <div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+            <div class="max-w-xl py-lg">
+                <span
+                    class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest mb-base block">EXPERIENCE
+                    THE CHILL</span>
+                <h2 class="font-headline-xl text-headline-xl text-on-background mb-md">Cool Down Like Royalty</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Whether you're seeking a moment of
+                    mid-day zen or post-workout recovery, Amul Kool Royal Elaichi delivers an exquisitely smooth,
+                    lingering cooling sensation that lasts.</p>
+                <div
+                    class="inline-flex items-center gap-md bg-surface/90 backdrop-blur p-md rounded-xl border border-outline-variant">
+                    <div class="flex -space-x-4">
+                        <div
+                            class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white border-2 border-surface">
+                            <span class="material-symbols-outlined text-sm">ac_unit</span>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white border-2 border-surface">
+                            <span class="material-symbols-outlined text-sm">thermometer</span>
+                        </div>
+                    </div>
+                    <p class="font-label-md text-label-md text-on-background">Enjoy at <span
+                            class="font-bold">4°C</span> for the best experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-xl bg-secondary text-on-secondary transition-all duration-700 opacity-100 translate-y-0">
+        <div class="container mx-auto px-margin-mobile md:px-margin-desktop text-center">
+            <h2 class="font-headline-lg text-headline-lg mb-md">Find it in a store near you</h2>
+            <p class="font-body-md text-body-md text-on-secondary/80 max-w-xl mx-auto mb-lg">
+                Join millions of fans who stay chilled with Amul Kool. Available at all leading retail outlets and
+                online stores.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-md">
+                <div class="relative flex-grow max-w-md">
+                    <input
+                        class="w-full pl-xl pr-md py-4 rounded-lg bg-surface text-on-background focus:ring-2 focus:ring-primary-container outline-none transition-all"
+                        placeholder="Enter your city" type="text">
+                    <span
+                        class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-on-surface-variant">location_on</span>
+                </div>
+                <button
+                    class="bg-primary text-on-primary px-lg py-4 rounded-lg font-label-md hover:bg-primary-container transition-all flex items-center justify-center gap-base">
+                    Locate Store
+                    <span class="material-symbols-outlined">near_me</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="w-full bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-xl gap-md container mx-auto">
+            <div class="flex flex-col gap-base items-center md:items-start">
+                <div class="font-headline-sm text-headline-sm font-bold text-secondary dark:text-secondary-fixed-dim">
+                    Amul Kool Royal
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant">© 2026 Amul Kool Royal. Stay Chilled.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-lg">
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Privacy Policy</a>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Terms of Service</a>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Nutrition Guide</a>
+                <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+                    href="#">Contact Us</a>
+            </div>
+            <div class="flex gap-md">
+                <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-secondary hover:text-white transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined">share</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-secondary hover:text-white transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined">mail</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Floating animation for hero image
+        const floatImage = document.querySelector('.animate-float');
+        let angle = 0;
+        function animate() {
+            angle += 0.02;
+            const yOffset = Math.sin(angle) * 15;
+            if (floatImage) {
+                floatImage.style.transform = `translateY(${yOffset}px)`;
+            }
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Simple scroll reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+
+</body>
+
+</html>
